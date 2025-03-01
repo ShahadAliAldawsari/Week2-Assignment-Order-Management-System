@@ -3,6 +3,9 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.UUID;
 
+//4. Exception Handling
+//        ○ Create a custom exception OutOfStockException for when stock is
+//            insufficient.
 class OutOfStockException extends Exception {
     // Default constructor
     public OutOfStockException() {
@@ -21,44 +24,31 @@ public class OrderManager {
     //        ○ Use a HashMap<UUID, Order> to store user order history.
 
     private List<Order> orders; // List to store orders
-    private HashMap<UUID, Order> userOrderHistory; //to store user order history.
+//    private HashMap<UUID, Order> userOrderHistory; //to store user order history.
+    private HashMap<UUID, List<Order>> userOrderHistory = new HashMap<UUID, List<Order>>(); //to store user order history.
 
 
     public OrderManager() {
-        orders = new ArrayList<Order>();
-        userOrderHistory = new HashMap<UUID, Order>();
+        orders = new ArrayList<>();
+        userOrderHistory = new HashMap<>();
     }
 
-    //4. Exception Handling
-    //        ○ Create a custom exception OutOfStockException for when stock is
-    //            insufficient.
-    public void addOrder(Order order, Product product, int quantity) {
-        try {
-            // Check if enough stock is available
-            product.checkStock(quantity);
 
-            // Reduce stock if order is successful
-            product.reduceStock(quantity);
-
-            orders.add(order);
-            userOrderHistory.put(order.getUserID(), order);
-            System.out.println("Order placed successfully for " + quantity + " units of " + product.getName());
-
-        } catch (OutOfStockException e) {
-            // Handle the custom exception
-            System.out.println("Order failed: " + e.getMessage());
-        }
-
+    public void addOrder(Order order) {
+        orders.add(order);
+            userOrderHistory.computeIfAbsent(order.getUserID(), k -> new ArrayList<>()).add(order);
+            System.out.println("Order placed successfully");
     }
 
     // Get order history for a specific user
-    public void getUserOrderHistory(int userID) {
-        Order userOrder = userOrderHistory.get(userID);
-        if (userOrder != null) {
-            System.out.println("Order History for UserID " + userID + ":");
-            System.out.println(userOrder);
-        } else {
+    public void getUserOrderHistory(UUID userID) {
+        List<Order> userOrders = userOrderHistory.get(userID);
+        if (userOrders == null || userOrders.isEmpty()) {
             System.out.println("No orders found for UserID " + userID);
+        } else {
+            for (Order order : userOrders) {
+                System.out.println(order);
+            }
         }
     }
 
@@ -82,7 +72,5 @@ public class OrderManager {
         System.out.println("Order not found: " + orderID);
         return null;
     }
-
-
 
 }
