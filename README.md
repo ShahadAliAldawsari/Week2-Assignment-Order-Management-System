@@ -1,4 +1,4 @@
-Week 2 Assignment - Order Management System
+<h1> Week 2 Assignment - Order Management System
 
 Part 1: SQL Project
 
