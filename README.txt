@@ -102,3 +102,51 @@ Exiting...
 
 Process finished with exit code 0
 
+
+
+Part 3: ASP.NET Core MVC
+
+Overview
+This project is a web application simulating Amazon.sa, built using ASP.NET Core MVC (.NET Core 8/9). It allows users to browse products, place orders, and view their order history.
+
+Project Structure
+Order Management System/
+│-- Controllers/
+│   ├── ProductController.cs  # Handles product retrieval
+│   ├── OrderController.cs    # Manages order placement and history
+│
+│-- Models/
+│   ├── User.cs         # Represents registered users
+│   ├── Product.cs      # Stores product details
+│   ├── Order.cs        # Stores order information
+│   ├── OrderDetails.cs # Links products to orders
+│
+│-- Views/
+│   ├── Product/
+│   │   ├── Index.cshtml  # Displays the product list
+│   ├── Order/
+│   │   ├── PlaceOrder.cshtml  # Order placement form
+│   │   ├── OrderHistory.cshtml  # Displays user order history
+│
+│-- wwwroot/  # Static files (CSS, JS, Images)
+│-- appsettings.json  # Configuration settings
+│-- Program.cs  # Main application entry point
+│-- TechJobPortal.csproj  # Project file
+
+
+Features
+Product Management: Displays a list of available products.
+Order Processing: Allows users to place orders.
+Order History: Shows past orders for a specific user.
+Model Validation: Ensures correct data input.
+UI Enhancement: Uses Bootstrap for a responsive design.
+
+Getting Started
+
+1- Clone the repository:
+	git clone <repository-url>
+	cd TechJobPortal
+2- Run the application:
+	dotnet run
+3- Open https://localhost:5001/Products in your browser.
+
