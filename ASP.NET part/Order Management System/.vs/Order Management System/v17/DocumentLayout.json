@@ -58,8 +58,12 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
@@ -83,8 +87,7 @@
               "RelativeToolTip": "Order Management System\\Views\\Order\\PlaceOrder.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T11:11:33.628Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:11:33.628Z"
             },
             {
               "$type": "Document",
@@ -96,8 +99,7 @@
               "RelativeToolTip": "Order Management System\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAAYAAAAAAAAAAAAuwB0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:03:09.843Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:03:09.843Z"
             },
             {
               "$type": "Document",
@@ -109,8 +111,7 @@
               "RelativeToolTip": "Order Management System\\Views\\Product\\Index.cshtml",
               "ViewState": "AgIAABEAAAAAAAAAAAAYwCoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T11:07:32.028Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:07:32.028Z"
             },
             {
               "$type": "Document",
@@ -122,8 +123,7 @@
               "RelativeToolTip": "Order Management System\\Controllers\\OrderController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABMAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:05:08.867Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:05:08.867Z"
             },
             {
               "$type": "Document",
@@ -135,8 +135,7 @@
               "RelativeToolTip": "Order Management System\\Models\\OrderDetails.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAAABgAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T10:56:02.87Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T10:56:02.87Z"
             },
             {
               "$type": "Document",
@@ -148,8 +147,7 @@
               "RelativeToolTip": "Order Management System\\Views\\Order\\OrderHistory.cshtml",
               "ViewState": "AgIAAAkAAAAAAAAAAAAAABwAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-01T11:13:43.314Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:13:43.314Z"
             },
             {
               "$type": "Document",
@@ -161,8 +159,7 @@
               "RelativeToolTip": "Order Management System\\Views\\Order\\PlaceOrder.cshtml.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T11:29:11.231Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T11:29:11.231Z"
             },
             {
               "$type": "Document",
@@ -174,8 +171,7 @@
               "RelativeToolTip": "Order Management System\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T06:30:36.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T06:30:36.251Z"
             },
             {
               "$type": "Document",
@@ -187,8 +183,7 @@
               "RelativeToolTip": "Order Management System\\Models\\Order.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAwBYAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T10:55:02.674Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T10:55:02.674Z"
             },
             {
               "$type": "Document",
@@ -200,8 +195,7 @@
               "RelativeToolTip": "Order Management System\\Models\\Product.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T10:54:29.335Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T10:54:29.335Z"
             },
             {
               "$type": "Document",
@@ -213,8 +207,7 @@
               "RelativeToolTip": "Order Management System\\Models\\User.cs",
               "ViewState": "AgIAAAcAAAAAAAAAAAAzwBQAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-01T10:53:09.899Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-01T10:53:09.899Z"
             }
           ]
         }
